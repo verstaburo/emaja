@@ -1,0 +1,23 @@
+mixin button(tag)
+  +b(tag || 'a').button&attributes(attributes)
+    div
+      block
+
+mixin ui-kit-button()
+  +ui-section
+    +ui-section-head
+      +ui-title Кнопки
+      +ui-path
+        p Блок: blocks/button/button
+
+    +ui-section-content()
+      +ui-elements-list()
+        +button Кнопка
+        +button
+          span Кнопка с иконкой
+          +icon('arrow')
+        +button()(disabled) Отключенная кнопка
+
+    //- При +ui-section-content(true) контейнер отсутствует
+    //- Для перечисления инлайновых блоков используется миксин +ui-elements-list()
+    //- Рамка вокруг особой секции: +ui-special()
