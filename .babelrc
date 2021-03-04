@@ -2,11 +2,11 @@
   "presets": [
     ["@babel/preset-env", {
       "modules": "auto",
-      // "loose": true,
-      // "corejs": 3,
-      // "useBuiltIns": "entry",
+      "loose": true,
+      "corejs": 3,
+      "useBuiltIns": "entry",
       "targets": {
-        "browsers": ["last 2 versions", "ie >= 11", "iOS >= 11"]
+        "browsers": [">= 1%", "last 1 major version", "not dead", "Chrome >= 60", "Firefox >= 60", "Edge >= 16", "iOS >= 10", "Safari >= 10", "Android >= 6", "not Explorer <= 11"]
       }
     }]
   ]

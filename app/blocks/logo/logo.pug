@@ -1,0 +1,5 @@
+mixin logo()
+  - var tag = pageType === 'index' ? 'div' : 'a'
+  +b(tag).navbar-brand.p-0&attributes(attributes)
+    img(src="assets/images/logo.svg" width="145" height="65" alt="@")
+    block

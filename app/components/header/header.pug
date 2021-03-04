@@ -1,0 +1,9 @@
+mixin header()
+  +b.HEADER.header&attributes(attributes)
+    .container-fluid
+      nav.navbar.flex-nowrap.py-41.pe-12
+        if pageType === 'index'
+          +logo
+        else
+          +logo()(href="/")
+        +contacts

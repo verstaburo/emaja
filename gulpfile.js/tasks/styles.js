@@ -24,7 +24,9 @@ exports.build = () => (
   }))
   .pipe(gulpIf(isDebug, sourcemaps.init()))
   .pipe(bulkSass())
-  .pipe(sass())
+  .pipe(sass({
+    precision: 6,
+  }))
   .pipe(postcss([autoprefixer({
       grid: 'autoplace',
     }),

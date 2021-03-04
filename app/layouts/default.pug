@@ -2,8 +2,13 @@ include _externalIncludes
 include _internalIncludes
 
 doctype html
-html(lang='lv')
+html.h-100(lang='lv')
   include head
-  body
-    block content
+  - var pageType = page || 'default'
+  body.d-flex.flex-column.h-100
+    +svg-components
+    +header
+    main.flex-shrink-0.fs-4
+      block content
+    +footer.mt-auto
     script(src='assets/scripts/app.min.js')

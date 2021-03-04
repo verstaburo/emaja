@@ -1,0 +1,14 @@
+.request {
+  position: relative;
+  display: block;
+  border: 5px solid $dark;
+  border-radius: $border-radius-pill;
+
+  $b: &;
+
+  .btn {
+    transform: translate3d(0, 50%, 0);
+    box-shadow: 0 0 0 .8125rem $white !important;
+    width: 43%;
+  }
+}

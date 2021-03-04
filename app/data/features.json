@@ -1,0 +1,16 @@
+[{
+  "src": "assets/images/feature-1.svg",
+  "describe": "Leģitīmo kopīgo lēmumu pieņemšanai tiešsaistē"
+}, {
+  "src": "assets/images/feature-2.svg",
+  "describe": "Iedzīvotāju savstarpējai komunikācijai"
+}, {
+  "src": "assets/images/feature-3.svg",
+  "describe": "Svarīgas informācijas apmaiņai un izplatīšanai vienuviet"
+}, {
+  "src": "assets/images/feature-4.svg",
+  "describe": "Grāmatvedībai un <br> rēķiniem"
+}, {
+  "src": "assets/images/feature-5.svg",
+  "describe": "Ikdienas pakalpojumu <br> saņemšanai"
+}]

@@ -1,52 +1,43 @@
-.button {
-  display: inline-block;
-  padding: 0 16px;
-  border: 0;
-  vertical-align: top;
-  box-sizing: border-box;
-  background-color: color(main);
-  transition: opacity $ease-main;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1.2;
-  height: 40px;
-  text-align: center;
-  appearance: none;
-  border-radius: 5px;
-  color: white;
-  fill: white;
+.btn {
+}
 
-  $b: &;
+.bg-gradient {
+  border-left-color: #fcbe26;
+  border-right-color: #09e1ff;
+}
 
-  div {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-    width: 100%;
+.btn-circle {
+  width: 2.875rem;
+}
 
-    > *:not(:first-child) {
-      margin-left: 10px;
-    }
-  }
+.btn-sm-circle {
+  width: 1.875rem;
+}
 
-  svg {
-    width: 12px;
-    height: 12px;
-    transition: transform $ease-main;
-  }
+.btn-lg-circle {
+  width: 3.75rem;
+}
 
-  &[disabled] {
-    opacity: .5;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
+.btn-xl {
+  height: 4.0625rem;
+}
 
-  &:hover {
-    opacity: .5;
+.btn-xl-circle {
+  width: 4.0625rem;
+}
 
-    svg {
-      transform: translate3d(3px, 0, 0);
-    }
-  }
+.btn-gradient-border {
+  border-image-slice: 22 !important;
+  border-image-width: 22px !important;
+  border-image-outset: 0 0 0 0 !important;
+  border-image-repeat: stretch stretch !important;
+  border-image-source: url('../images/gradient-border-btn.svg') !important;
+}
+
+.btn-gradient-border-xl {
+  border-image-slice: 31 !important;
+  border-image-width: 31px !important;
+  border-image-outset: 0 0 0 0 !important;
+  border-image-repeat: stretch stretch !important;
+  border-image-source: url('../images/gradient-border-circle-65.svg') !important;
 }

@@ -4,7 +4,7 @@
 
   &__link {
     display: block;
-    transition: opacity $ease-main;
+    transition: $transition-fade;
     color: color(main);
     font-size: 16px;
     line-height: 1.4;
@@ -14,7 +14,7 @@
       margin-left: 10px;
       font-size: 13px;
       opacity: .5;
-      transition: transform $ease-main;
+      transition: $transition-base;
       display: inline-block;
     }
 

@@ -1,0 +1,63 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'Pilot project'
+
+block content
+  .container-fluid
+    .row
+      .col-sm-10.offset-sm-1
+        +alert.alert-danger.text-center.text-white.fs-5.border-0 SVARĪGI: uz doto brīdi sistēma atrodas izstādes stadijā un pilotprojektā ir pieejama tikai elektroniskās aptaujas funkcionalitāte mobilā lietotnē
+  +page-section
+    .container-fluid
+      .row
+        .col-sm-10.offset-sm-1
+          .d-flex.align-items-center
+            +button.px-1.btn-xl.btn-xl-circle.btn-gradient-border-xl.rounded-circle(href="/")
+              +icon('back').back-icon(width="26" height="16")
+            h2.display-1.m-0 Kas ir pilotprojekts?
+            +applications.ms-auto
+          .row.gx-82
+            .col
+              p Uz doto momentu ir izstrādāta mobilā lietotnē ar pirmo un pati galveno funkciju – <strong>likumīgo iespēju piedalīties mājas kopīpašnieku aptaujā elektroniski.</strong>
+              p Pilotprojekta mērķis ir notestēt lietotnes darbību reālā dzīve ar aktuālām lietotāju aptaujām un balsojumiem lai novērstu nepilnības un pielāgotu sistēmu ērtai lietošanai, ka arī iegūt pirmos darba rezultātus, lai varam turpināt izstкādi un pievienot jaunās funkcionālas iespējas
+            .col
+              p . Tas ne tikai dos mums vērtīgās atsauksmes un testa rezultātus turpmākai attīstībai, bet arī jau tagad palīdzēs Jums risināt mājas aktuālos jautājumus.
+              p Visas aptaujas sistēmā ir pilnvērtīgas un likumiskas, kuru rezultātā Jūs iegūsiet elektroniski parakstītus dokumentus ar tādu pašu juridisku spēku, kā ar roku parakstītās papīra aptaujas lapas. Elektroniskās aptaujas mehānisms paredz paralēli veikt balss vākšanu arī tradicionālā formā. Zemāk diagrammā ir attēlota pilotprojekta darbību plūsma.
+
+        .col-sm-1
+  +page-section
+    .container-fluid
+      .row
+        .col-sm-4.offset-sm-1
+          +text-styled
+            p.display-3 Ja jums ir velme piedalīties pilotprojektā, lūdzu sekojiet norādījumiem zemāk. Gan piedalīšanās, gan mobilā lietotne ir bez maksas. Jebkurā momentā var atteikties.
+        .col-sm-6
+          +bg-image
+            picture
+              source(srcset="assets/images/bg-image-1.webp, assets/images/bg-image-1@wx.webp 2x" type="image/webp")
+              source(srcset="assets/images/bg-image-1.jpg, assets/images/bg-image-1@wx.jpg 2x" type="image/jpeg")
+              img.img-fluid.mw-40.rounded-pill(src="assets/images/bg-image-1.jpg" alt="@@")
+  +page-section
+    .container-fluid
+      .row
+        .col-sm-10.offset-sm-1
+          h3.display-1 Kā pievienoties pilotprojektam:
+          ol
+            li Atstājiet pieteikumu, <a href="#">aizpildot zemāk esošo formu.</a>
+            li Mēs izskatīsim jūsu pieteikumu 3 darba dienu laikā un sazināsimies ar Jums informācijas precizēšanai, pēc tam reģistrēsim jūsu māju eMāja sistēmā (visi dzīvokļu īpašumi kļūs redzami attiecīgiem īpašniekiem3 eMāja mobilā lietotnē).
+            li Jūs paziņojiet citiem mājas kopīpašniekiem un izplatāt informāciju par mobilo lietotni viņu starpā
+            li Kopā ar mums plānojam kopīpašnieku aptauju, gatavojam aptaujas lapu un palaižam balsošanu (mēs palīdzēsim to izdarīt)
+            li Pēc aptaujas baigām atbildīgā persona saņem elektroniski parakstītus balsošanas dokumentus.
+  +page-section
+    .container-fluid
+      .row
+        .col-sm-6.offset-sm-1
+          h3.display-1.mw-60 Pieteikuma forma
+          +request
+        .col-sm-4
+          +bg-image
+            picture
+              source(srcset="assets/images/bg-image-2.webp, assets/images/bg-image-2@wx.webp 2x" type="image/webp")
+              source(srcset="assets/images/bg-image-2.jpg, assets/images/bg-image-2@wx.jpg 2x" type="image/jpeg")
+              img.img-fluid.mw-40.rounded-pill(src="assets/images/bg-image-2.jpg" alt="@@")

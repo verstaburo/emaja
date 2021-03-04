@@ -1,0 +1,9 @@
+mixin svg-components()
+  +b.SVG.svg-components.visually-hidden&attributes(attributes)
+    defs
+      linearGradient#gradient-base(x1="49%" y1="12%" x2="51%" y2="85%")
+        stop(stop-color="#FCBE26")
+        stop(offset="0.333333" stop-color="#B4ED3A")
+        stop(offset="0.630208" stop-color="#28EC8D")
+        stop(offset="1" stop-color="#09E1FF")
+    block

@@ -4,7 +4,7 @@ const errorHandler = require('gulp-plumber-error-handler');
 const imagemin = require('gulp-imagemin');
 const imageminJpegtran = require('imagemin-jpegtran');
 const changed = require('gulp-changed');
-const webp = require('gulp-webp');
+const webpConverter = require('gulp-webp');
 
 exports.images = () => (
   gulp.src('app/static/images/**/*')
@@ -34,10 +34,10 @@ exports.images = () => (
 exports.webp = () => (
   gulp.src('app/static/images/**/*.{jpg, png}')
   .pipe(plumber({
-    errorHandler: errorHandler('Error in webp task'),
+    errorHandler: errorHandler('Error in webp task')
   }))
   .pipe(changed('dist/assets/images'))
-  .pipe(webp({
+  .pipe(webpConverter({
     quality: 90,
     preset: 'photo',
     method: 6,

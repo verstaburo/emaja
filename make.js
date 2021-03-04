@@ -1,7 +1,9 @@
 const program = require('commander');
 const fs = require('fs');
 const path = require('path');
-const { promisify } = require('util');
+const {
+  promisify
+} = require('util');
 
 /* eslint-disable global-require */
 const sources = {
@@ -125,33 +127,6 @@ const appendToIncludes = (kind, blockName) => {
   fs.writeFileSync(filePath, nextFile, 'utf8');
 };
 
-const includeToUiKit = (kind, blockName) => {
-  const filePath = './app/pages/ui-kit/ui-kit.pug';
-
-  if (['component', 'block'].indexOf(kind) === -1) {
-    return;
-  }
-
-  const file = fs.readFileSync(filePath, 'utf8');
-  const includeString = `
-    //- ${kind === 'block' ? 'Блок' : 'Компонент'} ${blockName}
-    +ui-kit-${blockName}
-  `;
-  let lines = file.split(/\n/);
-
-  if (lines.slice(-1)[0].length < 1) {
-    lines.pop();
-  }
-
-  if (lines.indexOf(includeString) !== -1) {
-    return console.log(`>>> ${kind} ${blockName} already included to '${filePath}'`);
-  }
-
-  lines.push(includeString);
-  const nextFile = lines.join('\n');
-  fs.writeFileSync(filePath, nextFile, 'utf8');
-};
-
 const make = (name, kind, js) => {
   const blockPath = path.join(dirPath[kind], name);
 
@@ -170,7 +145,10 @@ const make = (name, kind, js) => {
       // Displays a list of files created
       files.forEach(file => console.log(file));
     })
-    .then(() => ({ kind, name }));
+    .then(() => ({
+      kind,
+      name
+    }));
 };
 
 const printError = err => console.log(err);
@@ -187,8 +165,7 @@ program
 
     const blocks = await Promise.all(promises).catch(printError);
     blocks.forEach(block => appendToIncludes(block.kind, block.name));
-    blocks.forEach(block => includeToUiKit(block.kind, block.name));
-});
+  });
 
 program
   .command('component [componentNames...]')
@@ -203,8 +180,7 @@ program
 
     const blocks = await Promise.all(promises).catch(printError);
     blocks.forEach(block => appendToIncludes(block.kind, block.name));
-    blocks.forEach(block => includeToUiKit(block.kind, block.name));
-});
+  });
 
 program
   .command('page [pageNames...]')

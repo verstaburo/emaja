@@ -2,8 +2,24 @@
 Как подключать шрифт
 
 Миксин:
-@mixin font-face($name, $style, $weight, $fontname)
+/*
+Миксин для подключения шрифтов.
+*/
+@mixin font-face($name, $style, $weight, $fontname) {
+  $path: '../fonts/';
 
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src:
+      url('' + $path + $fontname + '.woff2') format('woff2'),
+      url('' + $path + $fontname + '.woff') format('woff');
+  }
+}
+
+/*
 Пример использования:
 @include font-face('Corbel', normal, 700, 'CorbelBold');
 
@@ -18,3 +34,10 @@
 800 — Extra Bold, Ultra Bold
 900 — Black, Heavy
 */
+
+@include font-face('MuktaVaani', normal, 300, 'MuktaVaani-Light');
+@include font-face('MuktaVaani', normal, 400, 'MuktaVaani-Regular');
+@include font-face('MuktaVaani', normal, 500, 'MuktaVaani-Medium');
+@include font-face('MuktaVaani', normal, 700, 'MuktaVaani-Bold');
+@include font-face('Montserrat', normal, 400, 'Montserrat-Regular');
+@include font-face('Montserrat', normal, 500, 'Montserrat-Medium');
