@@ -2,8 +2,6 @@
 // https://github.com/jlmakes/scrollreveal
 import ScrollReveal from 'scrollreveal';
 
-const $ = window.$;
-
 export function scrollAnimation() {
   const sr = ScrollReveal({
     reset: false,
@@ -23,25 +21,25 @@ export function scrollAnimation() {
     };
   }
 
-  if ($('.js-sr_bottom').length) {
+  if (document.querySelectorAll('.js-sr_bottom').length) {
     sr.reveal('.js-sr_bottom', getSettings('bottom'));
   }
 
-  if ($('.js-sr_left').length) {
+  if (document.querySelectorAll('.js-sr_left').length) {
     sr.reveal('.js-sr_left', getSettings('left'));
   }
 
-  if ($('.js-sr_right').length) {
+  if (document.querySelectorAll('.js-sr_right').length) {
     sr.reveal('.js-sr_right', getSettings('right'));
   }
 
-  if ($('.js-sr_top').length) {
+  if (document.querySelectorAll('.js-sr_top').length) {
     sr.reveal('.js-sr_top', getSettings('top'));
   }
 
   // Показываем элементы, если ScrollReveal не поддерживается
   if (ScrollReveal().noop) {
-    $(document).find('.js-sr').removeClass('.js-sr');
+    document.querySelectorAll('.js-sr').each((el) => el.classList.remove('js-sr'));
   }
 }
 

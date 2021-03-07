@@ -4,42 +4,42 @@ block head
   - var pageTitle = 'Главная страница'
   - var page = 'index'
 
+block modals
+  +modal-feature()
+  +modal-video()
+
 block content
-  +page-section.pt-23
-    .container-fluid
-      .row
+  +page-section.pt-23.mb-125
+    .container-fluid.px-xl-100
+      .row.mb-70
         .col-sm-5.pt-93
           p.mb-56 Laipni lūdzam eMājā!
-          h1.display-1.mb-93 Atradi savu māju, meklē kaimiņus, piedalies diskusijās!
-          +applications.mb-82
+          h1.display-1.mb-78 Atradi savu māju, meklē kaimiņus, piedalies diskusijās!
+          +applications
         .col-sm-7
           picture
             source(srcset="assets/images/lead-image.webp, assets/images/lead-image@2x.webp 2x" type="image/webp")
             source(srcset="assets/images/lead-image.jpg, assets/images/lead-image@2x.jpg 2x" type="image/jpeg")
             img.img-fluid(src="assets/images/lead-image.jpg" alt="@@")
-        .col-sm-12
-          +note Uz doto brīdi sistēma atrodas izstādes stadijā un pilotprojektā ir pieejama tikai elektroniskās aptaujas funkcionalitāte mobilā lietotnē
-  +page-section
-    .container-fluid
+      +note Uz doto brīdi sistēma atrodas izstādes stadijā un pilotprojektā ir pieejama tikai elektroniskās aptaujas funkcionalitāte mobilā lietotnē
+  +page-section.mb-218
+    .container-fluid.px-xl-100
       .row
         .col-sm-3
           h2.display-2 Emāja ir efektīs rīks kurš ir domāts:
         .col-sm-8.offset-md-1
           +features
-  +page-section
-    .container-fluid
+  +page-section.mb-186
+    .container-fluid.px-xl-100.px-xl-100
       .row
         .col-sm-7
-          +media
-            +bg-image
-              picture
-                source(srcset="assets/images/video-preview.webp, assets/images/video-preview@wx.webp 2x" type="image/webp")
-                source(srcset="assets/images/video-preview.jpg, assets/images/video-preview@wx.jpg 2x" type="image/jpeg")
-                img.img-fluid.mw-40.rounded-pill(src="assets/images/video-preview.jpg" alt="@@")
-        .col-sm-5
-          +text-styled
-            h3.display-3 Pievienojies pilotprojektam jau tagad un palīdzi uzlabot daudzdzīvokļu namu pārvaldīšanas nozari!
-            a.link-dark(href="project.html") Lasīt vairāk par Pilotprojektu
-              +icon('next').next-arrow(width="37" height="16")
-
-  +modal-feature()#modal-feature
+          +media({text: "Apskatīt Produkta demonstrācijas video", src: "https://www.youtube.com/embed/zpOULjyy-n8?rel=0"})
+            picture
+              source(srcset="assets/images/video-preview.webp, assets/images/video-preview@2x.webp 2x" type="image/webp")
+              source(srcset="assets/images/video-preview.jpg, assets/images/video-preview@2x.jpg 2x" type="image/jpeg")
+              img.img-fluid.mw-40.rounded-pill(src="assets/images/video-preview.jpg" alt="@@")
+        .col-sm-5.pt-88
+          +decorative-frame.frame-end.frame-w-120.px-52.pt-123.pb-96
+            h3.display-3.mb-82 Pievienojies pilotprojektam jau tagad un palīdzi uzlabot daudzdzīvokļu namu pārvaldīšanas nozari!
+            a.link-dark.fw-bold.fs-7.ls-45(href="project.html") Lasīt vairāk par Pilotprojektu
+              +icon('next').next-arrow.ms-40(width="37" height="16")

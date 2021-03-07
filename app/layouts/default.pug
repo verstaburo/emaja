@@ -6,9 +6,10 @@ html.h-100(lang='lv')
   include head
   - var pageType = page || 'default'
   body.d-flex.flex-column.h-100
-    +svg-components
     +header
+    +svg-components
     main.flex-shrink-0.fs-4
       block content
+      block modals
     +footer.mt-auto
     script(src='assets/scripts/app.min.js')

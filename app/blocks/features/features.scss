@@ -1,3 +1,14 @@
 .features {
   $b: &;
 }
+
+.feature-icon {
+  display: block;
+  width: 4.125rem;
+  height: 4.125rem;
+
+  svg {
+    width: 100%;
+    max-height: 100%;
+  }
+}

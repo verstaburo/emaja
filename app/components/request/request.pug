@@ -1,6 +1,6 @@
 mixin request()
-  +form().needs-validation.request(method="POST" action="/" novalidate)
-    .row.gy-33.px-63.pt-100.pb-0
+  +form().needs-validation.request.decorative-frame.frame-w-134(method="POST" action="/" novalidate)
+    .row.gy-33.px-68.pt-72.pb-0
       .col-sm-6
         input.form-control(type="text" name="name" placeholder="Nosaukums" required)
         .invalid-feedback No empty field
@@ -19,6 +19,6 @@ mixin request()
       .col-12
         textarea.form-control(name="topic" placeholder="Plāntotājs aptaujas tēmats un cita svarīgā informācija" rows="3" required)
         .invalid-feedback No empty field
-      .col-12.d-flex.justify-content-center.mt-22
-        +button('button').btn-lg.text-nowrap.text-center.bg-gradient.text-white.fw-bolder.mw-(type="submit") Iesniegt
+      .col-12.d-flex.justify-content-center.mt-26
+        +button('button').btn-lg.text-nowrap.text-center.bg-gradient.text-white.fw-bolder(type="submit") Iesniegt
     block

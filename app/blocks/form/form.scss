@@ -3,3 +3,25 @@
 
   $b: &;
 }
+
+.form-control {
+  letter-spacing: -.025em;
+
+  &::placeholder {
+    font-size: $h6-font-size;
+    letter-spacing: -.025em;
+  }
+
+  &:focus {
+    border-image-slice: 31 !important;
+    border-image-width: 31px !important;
+    border-image-outset: 0 0 0 0 !important;
+    border-image-repeat: stretch stretch !important;
+    border-image-source: url('../images/gradient-border-circle-65.svg') !important;
+  }
+}
+
+textarea.form-control {
+  resize: none;
+  min-height: 270px;
+}

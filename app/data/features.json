@@ -1,16 +1,21 @@
 [{
   "src": "assets/images/feature-1.svg",
-  "describe": "Leģitīmo kopīgo lēmumu pieņemšanai tiešsaistē"
+  "describe": "Leģitīmo kopīgo lēmumu pieņemšanai tiešsaistē",
+  "modal": "#modal-feature"
 }, {
   "src": "assets/images/feature-2.svg",
-  "describe": "Iedzīvotāju savstarpējai komunikācijai"
+  "describe": "Iedzīvotāju savstarpējai komunikācijai",
+  "modal": "#modal-feature-1"
 }, {
   "src": "assets/images/feature-3.svg",
-  "describe": "Svarīgas informācijas apmaiņai un izplatīšanai vienuviet"
+  "describe": "Svarīgas informācijas apmaiņai un izplatīšanai vienuviet",
+  "modal": "#modal-feature-2"
 }, {
   "src": "assets/images/feature-4.svg",
-  "describe": "Grāmatvedībai un <br> rēķiniem"
+  "describe": "Grāmatvedībai un <br> rēķiniem",
+  "modal": "#modal-feature-3"
 }, {
   "src": "assets/images/feature-5.svg",
-  "describe": "Ikdienas pakalpojumu <br> saņemšanai"
+  "describe": "Ikdienas pakalpojumu <br> saņemšanai",
+  "modal": "#modal-feature-4"
 }]

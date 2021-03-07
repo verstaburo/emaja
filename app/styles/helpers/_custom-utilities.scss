@@ -1,0 +1,10 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    'text-decoration-color': (
+      property: text-decoration-color,
+      class: text-decoration,
+      values: map-merge($theme-colors, ('white': $white)),
+    )
+  )
+);

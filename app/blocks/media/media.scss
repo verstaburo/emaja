@@ -1,5 +1,29 @@
 .media {
-  display: block;
-  
+  position: relative;
   $b: &;
+}
+
+.media-preview {
+  position: relative;
+  z-index: 1;
+}
+
+.media-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  &::before {
+    display: block;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='37' height='41' viewBox='0 0 37 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.772 20.5316L0.458685 40.6585L0.458687 0.404774L36.772 20.5316Z' fill='white'/%3E%3C/svg%3E%0A"), linear-gradient(214.58deg, #fcbe26 0%, #b4ed3A 33.33%, #28ec8d 63.02%, #09e1ff 100%);
+    background-repeat: no-repeat;
+    background-position: 57% 50%, 0 0;
+    background-size: 2.3125rem 2.5625rem, auto;
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 50%;
+    flex: none;
+  }
 }

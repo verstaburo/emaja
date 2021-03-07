@@ -4,60 +4,60 @@ block head
   - var pageTitle = 'Pilot project'
 
 block content
-  .container-fluid
+  .container-fluid.px-xl-100.mt-2
     .row
       .col-sm-10.offset-sm-1
-        +alert.alert-danger.text-center.text-white.fs-5.border-0 SVARĪGI: uz doto brīdi sistēma atrodas izstādes stadijā un pilotprojektā ir pieejama tikai elektroniskās aptaujas funkcionalitāte mobilā lietotnē
-  +page-section
-    .container-fluid
+        +alert.bg-pink.text-center.text-white.fs-5.border-0 SVARĪGI: uz doto brīdi sistēma atrodas izstādes stadijā un pilotprojektā ir pieejama tikai elektroniskās aptaujas funkcionalitāte mobilā lietotnē
+  +page-section.pt-80.mb-88
+    .container-fluid.px-xl-100
       .row
         .col-sm-10.offset-sm-1
-          .d-flex.align-items-center
-            +button.px-1.btn-xl.btn-xl-circle.btn-gradient-border-xl.rounded-circle(href="/")
+          .d-flex.align-items-center.mb-110
+            +button.px-1.btn-xl.btn-xl-circle.btn-gradient-border-xl.rounded-circle.me-45.d-flex.align-items-center.justify-content-center(href="/")
               +icon('back').back-icon(width="26" height="16")
-            h2.display-1.m-0 Kas ir pilotprojekts?
-            +applications.ms-auto
-          .row.gx-82
+            h2.display-1.mb-0.me-45 Kas ir pilotprojekts?
+            +applications.ms-auto.mb-0
+          .row.gx-50.lh-17
             .col
-              p Uz doto momentu ir izstrādāta mobilā lietotnē ar pirmo un pati galveno funkciju – <strong>likumīgo iespēju piedalīties mājas kopīpašnieku aptaujā elektroniski.</strong>
-              p Pilotprojekta mērķis ir notestēt lietotnes darbību reālā dzīve ar aktuālām lietotāju aptaujām un balsojumiem lai novērstu nepilnības un pielāgotu sistēmu ērtai lietošanai, ka arī iegūt pirmos darba rezultātus, lai varam turpināt izstкādi un pievienot jaunās funkcionālas iespējas
+              p.mb-45 Uz doto momentu ir izstrādāta mobilā lietotnē ar pirmo un pati galveno funkciju – <strong>likumīgo iespēju piedalīties mājas kopīpašnieku aptaujā elektroniski.</strong>
+              p.mb-45 Pilotprojekta mērķis ir notestēt lietotnes darbību reālā dzīve ar aktuālām lietotāju aptaujām un balsojumiem lai novērstu nepilnības un pielāgotu sistēmu ērtai lietošanai, ka arī iegūt pirmos darba rezultātus, lai varam turpināt izstкādi un pievienot jaunās funkcionālas iespējas
             .col
-              p . Tas ne tikai dos mums vērtīgās atsauksmes un testa rezultātus turpmākai attīstībai, bet arī jau tagad palīdzēs Jums risināt mājas aktuālos jautājumus.
-              p Visas aptaujas sistēmā ir pilnvērtīgas un likumiskas, kuru rezultātā Jūs iegūsiet elektroniski parakstītus dokumentus ar tādu pašu juridisku spēku, kā ar roku parakstītās papīra aptaujas lapas. Elektroniskās aptaujas mehānisms paredz paralēli veikt balss vākšanu arī tradicionālā formā. Zemāk diagrammā ir attēlota pilotprojekta darbību plūsma.
+              p.mb-45 . Tas ne tikai dos mums vērtīgās atsauksmes un testa rezultātus turpmākai attīstībai, bet arī jau tagad palīdzēs Jums risināt mājas aktuālos jautājumus.
+              p.mb-45 Visas aptaujas sistēmā ir pilnvērtīgas un likumiskas, kuru rezultātā Jūs iegūsiet elektroniski parakstītus dokumentus ar tādu pašu juridisku spēku, kā ar roku parakstītās papīra aptaujas lapas. Elektroniskās aptaujas mehānisms paredz paralēli veikt balss vākšanu arī tradicionālā formā. Zemāk diagrammā ir attēlota pilotprojekta darbību plūsma.
 
         .col-sm-1
-  +page-section
-    .container-fluid
+  +page-section.mb-188
+    .container-fluid.px-xl-100
       .row
-        .col-sm-4.offset-sm-1
-          +text-styled
-            p.display-3 Ja jums ir velme piedalīties pilotprojektā, lūdzu sekojiet norādījumiem zemāk. Gan piedalīšanās, gan mobilā lietotne ir bez maksas. Jebkurā momentā var atteikties.
+        .col-sm-4.offset-sm-1.pt-218
+          +decorative-frame.frame-w-152.ps-110.pe-50.pt-123.pb-66
+            p.display-4 Ja jums ir velme piedalīties pilotprojektā, lūdzu sekojiet norādījumiem zemāk. Gan piedalīšanās, gan mobilā lietotne ir bez maksas. Jebkurā momentā var atteikties.
         .col-sm-6
           +bg-image
             picture
-              source(srcset="assets/images/bg-image-1.webp, assets/images/bg-image-1@wx.webp 2x" type="image/webp")
-              source(srcset="assets/images/bg-image-1.jpg, assets/images/bg-image-1@wx.jpg 2x" type="image/jpeg")
+              source(srcset="assets/images/bg-image-1.webp, assets/images/bg-image-1@2x.webp 2x" type="image/webp")
+              source(srcset="assets/images/bg-image-1.jpg, assets/images/bg-image-1@2x.jpg 2x" type="image/jpeg")
               img.img-fluid.mw-40.rounded-pill(src="assets/images/bg-image-1.jpg" alt="@@")
-  +page-section
-    .container-fluid
+  +page-section.mb-70
+    .container-fluid.px-xl-100
       .row
         .col-sm-10.offset-sm-1
-          h3.display-1 Kā pievienoties pilotprojektam:
-          ol
-            li Atstājiet pieteikumu, <a href="#">aizpildot zemāk esošo formu.</a>
+          h3.display-1.mb-129 Kā pievienoties pilotprojektam:
+          +ol-list.lh-14
+            li Atstājiet pieteikumu,&nbsp;<a href="#">aizpildot zemāk esošo formu.</a>
             li Mēs izskatīsim jūsu pieteikumu 3 darba dienu laikā un sazināsimies ar Jums informācijas precizēšanai, pēc tam reģistrēsim jūsu māju eMāja sistēmā (visi dzīvokļu īpašumi kļūs redzami attiecīgiem īpašniekiem3 eMāja mobilā lietotnē).
             li Jūs paziņojiet citiem mājas kopīpašniekiem un izplatāt informāciju par mobilo lietotni viņu starpā
             li Kopā ar mums plānojam kopīpašnieku aptauju, gatavojam aptaujas lapu un palaižam balsošanu (mēs palīdzēsim to izdarīt)
             li Pēc aptaujas baigām atbildīgā persona saņem elektroniski parakstītus balsošanas dokumentus.
-  +page-section
-    .container-fluid
+  +page-section.mb-178
+    .container-fluid.px-xl-100
       .row
-        .col-sm-6.offset-sm-1
-          h3.display-1.mw-60 Pieteikuma forma
+        .col-sm-6.offset-sm-1.pt-58
+          h3.display-1.mw-60.mb-138 Pieteikuma forma
           +request
         .col-sm-4
           +bg-image
             picture
-              source(srcset="assets/images/bg-image-2.webp, assets/images/bg-image-2@wx.webp 2x" type="image/webp")
-              source(srcset="assets/images/bg-image-2.jpg, assets/images/bg-image-2@wx.jpg 2x" type="image/jpeg")
+              source(srcset="assets/images/bg-image-2.webp, assets/images/bg-image-2@2x.webp 2x" type="image/webp")
+              source(srcset="assets/images/bg-image-2.jpg, assets/images/bg-image-2@2x.jpg 2x" type="image/jpeg")
               img.img-fluid.mw-40.rounded-pill(src="assets/images/bg-image-2.jpg" alt="@@")

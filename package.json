@@ -13,7 +13,6 @@
   "dependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
-    "@fancyapps/fancybox": "^3.5.7",
     "@popperjs/core": "^2.6.0",
     "autoprefixer": "^10.0.0",
     "babel-loader": "^8.2.2",
@@ -55,7 +54,6 @@
     "gulp-webp": "^4.0.1",
     "imagemin-jpegtran": "^7.0.0",
     "jade-get-data": "^1.0.1",
-    "jquery": "^3.6.0",
     "object-fit-images": "^3.2.3",
     "postcss": "^8.2.6",
     "postcss-discard-comments": "^4.0.2",

@@ -1,3 +1,6 @@
-mixin media()
-  +b.media&attributes(attributes)
-    block
+mixin media(data)
+  DIV.media&attributes(attributes)
+    div.media-preview
+      block
+    a.media-link.text-white.ps-68.pe-145.pb-92.mw-100.position-absolute.bottom-0.left-0(href="#modal-youtube" data-bs-toggle="modal" data-youtube-src=data.src)
+      span.ms-38.border-bottom.border-candlelight.text-truncate!=data.text

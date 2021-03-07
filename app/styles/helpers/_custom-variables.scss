@@ -16,13 +16,13 @@ $enable-negative-margins:     false;
 $enable-deprecation-messages: true;
 $enable-important-utilities:  true;
 
-$red: #f1a298;
 $yellow: #fcbe26;
 $teal: #28ec8d;
 $cyan: #09e1ff;
 $dark: #1f2327;
 $heather: #b7c1cd;
 $placeholder: #9ea6b0;
+$pink: #f1a298;
 
 $theme-colors: (
   'primary': $primary,
@@ -32,13 +32,15 @@ $theme-colors: (
   'warning': $warning,
   'danger': $danger,
   'light': $light,
-  'dark': $dark
+  'dark': $dark,
 );
 
 $custom-colors: (
   'heather': $heather,
   'placeholder': $placeholder,
-  'nocolor': rgba(255, 255, 255, 0),
+  'candlelight': #ffd80e,
+  'supernova': #ffc906,
+  'pink': $pink,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -101,9 +103,14 @@ $custom-spacers: (
   12: $spacer * 0.6,
   13: $spacer * 0.65,
   15: $spacer * 0.75,
+  16: $spacer * 0.8,
   22: $spacer * 1.1,
   23: $spacer * 1.15,
+  24: $spacer * 1.2,
   25: $spacer * 1.25,
+  26: $spacer * 1.3,
+  30: $spacer * 1.5,
+  32: $spacer * 1.6,
   33: $spacer * 1.65,
   35: $spacer * 1.75,
   36: $spacer * 1.8,
@@ -111,13 +118,46 @@ $custom-spacers: (
   38: $spacer * 1.9,
   40: $spacer * 2,
   41: $spacer * 2.05,
+  45: $spacer * 2.25,
+  46: $spacer * 2.3,
+  50: $spacer * 2.5,
+  51: $spacer * 2.55,
   52: $spacer * 2.6,
+  55: $spacer * 2.75,
   56: $spacer * 2.8,
   58: $spacer * 2.9,
   63: $spacer * 3.15,
+  66: $spacer * 3.3,
+  68: $spacer * 3.4,
+  69: $spacer * 3.45,
+  70: $spacer * 3.5,
+  72: $spacer * 3.6,
+  74: $spacer * 3.7,
+  78: $spacer * 3.9,
+  80: $spacer * 4,
   82: $spacer * 4.1,
+  88: $spacer * 4.4,
+  92: $spacer * 4.6,
   93: $spacer * 4.65,
+  96: $spacer * 4.8,
+  98: $spacer * 4.9,
   100: $spacer * 5,
+  104: $spacer * 5.2,
+  110: $spacer * 5.5,
+  120: $spacer * 6,
+  123: $spacer * 6.15,
+  125: $spacer * 6.25,
+  129: $spacer * 6.45,
+  130: $spacer * 6.5,
+  138: $spacer * 6.9,
+  140: $spacer * 7,
+  145: $spacer * 7.25,
+  170: $spacer * 8.5,
+  178: $spacer * 8.9,
+  186: $spacer * 9.3,
+  188: $spacer * 9.4,
+  200: $spacer * 10,
+  218: $spacer * 10.9,
 );
 
 $spacers: map-merge($spacers, $custom-spacers);
@@ -125,9 +165,9 @@ $spacers: map-merge($spacers, $custom-spacers);
 $grid-gutter-width: 1.25rem;
 $gutters: $spacers;
 
-$container-padding-x: 6.25rem;
+$container-padding-x: $spacer;
 
-$paragraph-margin-bottom: 2.55rem;
+$paragraph-margin-bottom: 2.375rem;
 
 // Links
 //
@@ -176,7 +216,7 @@ $line-height-lg: 1.7;
 
 $headings-margin-bottom: $spacer / 2;
 $headings-font-weight: 500;
-$headings-line-height: 1.11;
+$headings-line-height: 1.12;
 
 $display-font-sizes: (
   1: 4.375rem,
@@ -266,9 +306,9 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 $input-padding-y: 1.0625rem;
 $input-padding-x: 1.8125rem;
 $input-font-family: $font-family-aditional;
-$input-font-size: $h6-font-size;
+$input-font-size: $h5-font-size;
 $input-font-weight: $font-weight-bold;
-$input-line-height: 1.3;
+$input-line-height: 1.375rem;
 
 $input-bg: $white;
 $input-disabled-bg: $gray-200;
@@ -328,3 +368,71 @@ $form-validation-states: (
   )
 ) !default;
 // scss-docs-end form-validation-states
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding: $spacer;
+
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between: .5rem;
+
+$modal-dialog-margin: $spacer;
+$modal-dialog-margin-y-sm-up: $spacer;
+
+$modal-title-line-height:           $line-height-base;
+
+$modal-content-color: $dark;
+$modal-content-bg: $white;
+$modal-content-border-color: $dark;
+$modal-content-border-width: 0;
+$modal-content-border-radius:  $border-radius-pill;
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+$modal-content-box-shadow-xs: none;
+$modal-content-box-shadow-sm-up: none;
+
+$modal-backdrop-bg: $black;
+$modal-backdrop-opacity: .25;
+$modal-header-border-color: $border-color;
+$modal-footer-border-color: $modal-header-border-color;
+$modal-header-border-width: 0;
+$modal-footer-border-width: $modal-header-border-width;
+$modal-header-padding-y: $spacer;
+$modal-header-padding-x: $modal-inner-padding;
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+$modal-sm: 300px;
+$modal-md: 500px;
+$modal-lg: 850px;
+$modal-xl: 1140px;
+
+$modal-fade-transform: translate(0, -50px);
+$modal-transition: transform .3s ease-out;
+$modal-scale-transform: scale(1.02);
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y: $spacer / 2;
+$alert-padding-x: $spacer / 2;
+$alert-margin-bottom: 1rem;
+$alert-border-radius: $border-radius;
+$alert-link-font-weight: $font-weight-bold;
+$alert-border-width: 0;
+
+// Close
+
+$btn-close-width: 1.8125rem;
+$btn-close-height: $btn-close-width;
+$btn-close-padding-x: 0;
+$btn-close-padding-y: $btn-close-padding-x;
+$btn-close-color: map-get($theme-colors, 'supernova');
+$btn-close-bg: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L27 27' stroke='#{$btn-close-color}' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M27 2L2 27' stroke='#{$btn-close-color}' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+$btn-close-focus-shadow: none;
+$btn-close-opacity: 1;
+$btn-close-hover-opacity: .75;
+$btn-close-focus-opacity: .5;
+$btn-close-disabled-opacity: .25;
+$btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
