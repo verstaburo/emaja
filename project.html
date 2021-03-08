@@ -37,7 +37,7 @@
     </header><svg class="svg-components visually-hidden">
         <defs>
             <linearGradient id="gradient-arrow" x1="18" y1="8" x2="18" y2="9" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FCBE26"></stop>
+                <stop offset="0" stop-color="#FCBE26"></stop>
                 <stop offset="0.333333" stop-color="#B4ED3A"></stop>
                 <stop offset="0.630208" stop-color="#28EC8D"></stop>
                 <stop offset="1" stop-color="#09E1FF"></stop>
@@ -56,9 +56,9 @@
             <div class="container-fluid px-xl-100">
                 <div class="row">
                     <div class="col-sm-10 offset-sm-1">
-                        <div class="d-flex align-items-center mb-110"><a class="btn px-1 btn-xl btn-xl-circle btn-gradient-border-xl rounded-circle me-45 d-flex align-items-center justify-content-center" href="/"><svg class="btn__back-icon" width="26" height="16"><use xlink:href="assets/images/icon.svg#icon_back"></use></svg></a>
-                            <h2 class="display-1 mb-0 me-45">Kas ir pilotprojekts?</h2>
-                            <UL class="applications list-unstyled d-flex ms-auto mb-0">
+                        <div class="d-flex align-items-center mb-110 flex-wrap">
+                            <h2 class="display-1 d-inline-flex align-items-center me-auto pe-45 mb-0"><a class="btn px-1 btn-xl btn-xl-circle btn-gradient-border-xl rounded-circle me-45 d-flex align-items-center justify-content-center" href="/"><svg class="btn__back-icon" width="26" height="16"><use xlink:href="assets/images/icon.svg#icon_back"></use></svg></a>Kas ir pilotprojekts?</h2>
+                            <UL class="applications list-unstyled d-flex mb-0">
                                 <li class="applications-item me-35 py-15"><a class="application-link" href="#"><img src="assets/images/app-store.png" alt="@@" width="200" height="70" /></a></li>
                                 <li class="applications-item py-15"><a class="application-link" href="#"><img src="assets/images/google-pay.png" alt="@@" width="235" height="70" /></a></li>
                             </UL>
@@ -74,7 +74,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-1"></div>
                 </div>
             </div>
         </SECTION>
@@ -83,14 +82,14 @@
                 <div class="row">
                     <div class="col-sm-4 offset-sm-1 pt-218">
                         <div class="decorative-frame frame-w-152 ps-110 pe-50 pt-123 pb-66">
-                            <p class="display-4">Ja jums ir velme piedalīties pilotprojektā, lūdzu sekojiet norādījumiem zemāk. Gan piedalīšanās, gan mobilā lietotne ir bez maksas. Jebkurā momentā var atteikties.</p>
+                            <h3 class="display-4">Ja jums ir velme piedalīties pilotprojektā, lūdzu sekojiet norādījumiem zemāk. Gan piedalīšanās, gan mobilā lietotne ir bez maksas. Jebkurā momentā var atteikties.</h3>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="bg-image">
                             <picture>
                                 <source srcset="assets/images/bg-image-1.webp, assets/images/bg-image-1@2x.webp 2x" type="image/webp">
-                                <source srcset="assets/images/bg-image-1.jpg, assets/images/bg-image-1@2x.jpg 2x" type="image/jpeg"><img class="img-fluid mw-40 rounded-pill" src="assets/images/bg-image-1.jpg" alt="@@">
+                                <source srcset="assets/images/bg-image-1.jpg, assets/images/bg-image-1@2x.jpg 2x" type="image/jpeg"><img class="img-fluid mw-40 rounded-pill" src="assets/images/bg-image-1.jpg" alt="@@" loading="lazy">
                             </picture>
                         </div>
                     </div>
@@ -118,25 +117,25 @@
                 <div class="row">
                     <div class="col-sm-6 offset-sm-1 pt-58">
                         <h3 class="display-1 mw-60 mb-138">Pieteikuma forma</h3>
-                        <form class="form needs-validation request decorative-frame frame-w-134" method="POST" action="/" novalidate="novalidate">
+                        <form class="form needs-validation request decorative-frame frame-w-134" method="POST" action="/">
                             <div class="row gy-33 px-68 pt-72 pb-0">
                                 <div class="col-sm-6"><input class="form-control" type="text" name="name" placeholder="Nosaukums" required="required" />
-                                    <div class="invalid-feedback">No empty field</div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
-                                <div class="col-sm-6"><input class="form-control" type="text" name="contacts" placeholder="Kontaktinformācija (telefons, epasts)" required="required" />
-                                    <div class="invalid-feedback">No empty field</div>
+                                <div class="col-sm-6"><input class="form-control" type="text" name="contacts" placeholder="Kontaktinformācija (telefons, epasts)" required="required" data-parsley-mailphone="data-parsley-mailphone" />
+                                    <div class="invalid-feedback"></div>
                                 </div>
                                 <div class="col-12"><input class="form-control" type="text" name="address" placeholder="Mājas adrese (Pilsēta, iela, mājas numurs-korpuss)" required="required" />
-                                    <div class="invalid-feedback">No empty field</div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
                                 <div class="col-12"><input class="form-control" type="text" name="position" placeholder="Jūsu loma (Dz. īpašnieks/Mājas vecākais/Pārvaldnieks" required="required" />
-                                    <div class="invalid-feedback">No empty field</div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
                                 <div class="col-12"><input class="form-control" type="text" name="date" placeholder="Plānotas aptaujas datums (ja zinams)" required="required" />
-                                    <div class="invalid-feedback">No empty field</div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
                                 <div class="col-12"><textarea class="form-control" name="topic" placeholder="Plāntotājs aptaujas tēmats un cita svarīgā informācija" rows="3" required="required"></textarea>
-                                    <div class="invalid-feedback">No empty field</div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center mt-26"><button class="btn btn-lg text-nowrap text-center bg-gradient text-white fw-bolder" type="submit">Iesniegt</button></div>
                             </div>
@@ -146,7 +145,7 @@
                         <div class="bg-image">
                             <picture>
                                 <source srcset="assets/images/bg-image-2.webp, assets/images/bg-image-2@2x.webp 2x" type="image/webp">
-                                <source srcset="assets/images/bg-image-2.jpg, assets/images/bg-image-2@2x.jpg 2x" type="image/jpeg"><img class="img-fluid mw-40 rounded-pill" src="assets/images/bg-image-2.jpg" alt="@@">
+                                <source srcset="assets/images/bg-image-2.jpg, assets/images/bg-image-2@2x.jpg 2x" type="image/jpeg"><img class="img-fluid mw-40 rounded-pill" src="assets/images/bg-image-2.jpg" alt="@@" loading="lazy">
                             </picture>
                         </div>
                     </div>
@@ -165,8 +164,8 @@
                         <li class="nav-item ms-25"><a class="btn btn-gradient-border rounded-pill px-36" href="#">Ienākt</a></li>
                     </ul>
                     <UL class="socials d-flex flex-row list-unstyled align-items-center mb-0 ps-23">
-                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/fb.svg" width="32" height="32" /></a></LI>
-                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/tw.svg" width="32" height="32" /></a></LI>
+                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/fb.svg" width="32" height="32" alt="@@" /></a></LI>
+                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/tw.svg" width="32" height="32" alt="@@" /></a></LI>
                     </UL>
                 </div>
             </nav>

@@ -38,7 +38,7 @@
     </header><svg class="svg-components visually-hidden">
         <defs>
             <linearGradient id="gradient-arrow" x1="18" y1="8" x2="18" y2="9" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FCBE26"></stop>
+                <stop offset="0" stop-color="#FCBE26"></stop>
                 <stop offset="0.333333" stop-color="#B4ED3A"></stop>
                 <stop offset="0.630208" stop-color="#28EC8D"></stop>
                 <stop offset="1" stop-color="#09E1FF"></stop>
@@ -60,7 +60,7 @@
                     <div class="col-sm-7">
                         <picture>
                             <source srcset="assets/images/lead-image.webp, assets/images/lead-image@2x.webp 2x" type="image/webp">
-                            <source srcset="assets/images/lead-image.jpg, assets/images/lead-image@2x.jpg 2x" type="image/jpeg"><img class="img-fluid" src="assets/images/lead-image.jpg" alt="@@">
+                            <source srcset="assets/images/lead-image.jpg, assets/images/lead-image@2x.jpg 2x" type="image/jpeg"><img class="img-fluid w-100" src="assets/images/lead-image.jpg" alt="@@">
                         </picture>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             </a><a class="features-item col pe-40 d-flex flex-column lh-13" href="#modal-feature" data-bs-toggle="modal">
                                 <div class="feature-icon mb-3"><img src="assets/images/feature-5.svg" alt="@@" /></div><span>Ikdienas pakalpojumu <br> saņemšanai</span>
                             </a>
-                            <div class="features-item col d-flex flex-column justify-content-center"><a class="link-dark fw-bold fs-7 ls-45 pb-25" href="project.html">Vairāk par Emāja<svg class="next-arrow ms-35" width="37" height="16"><use xlink:href="assets/images/icon.svg#icon_next"></use></svg></a></div>
+                            <div class="features-item col d-flex flex-column justify-content-center"><a class="link-dark fw-bold fs-7 ls-45 pb-25 d-flex align-items-center mw-100" href="project.html">Vairāk par Emāja<svg class="next-arrow ms-35" width="37" height="16"><use xlink:href="assets/images/icon.svg#icon_next"></use></svg></a></div>
                         </div>
                     </div>
                 </div>
@@ -99,25 +99,25 @@
                             <div class="media-preview">
                                 <picture>
                                     <source srcset="assets/images/video-preview.webp, assets/images/video-preview@2x.webp 2x" type="image/webp">
-                                    <source srcset="assets/images/video-preview.jpg, assets/images/video-preview@2x.jpg 2x" type="image/jpeg"><img class="img-fluid mw-40 rounded-pill" src="assets/images/video-preview.jpg" alt="@@">
+                                    <source srcset="assets/images/video-preview.jpg, assets/images/video-preview@2x.jpg 2x" type="image/jpeg"><img class="img-fluid mw-40 rounded-pill" src="assets/images/video-preview.jpg" alt="@@" loading="lazy">
                                 </picture>
                             </div><a class="media-link text-white ps-68 pe-145 pb-92 mw-100 position-absolute bottom-0 left-0" href="#modal-youtube" data-bs-toggle="modal" data-youtube-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"><span class="ms-38 border-bottom border-candlelight text-truncate">Apskatīt Produkta demonstrācijas video</span></a>
                         </DIV>
                     </div>
                     <div class="col-sm-5 pt-88">
                         <div class="decorative-frame frame-end frame-w-120 px-52 pt-123 pb-96">
-                            <h3 class="display-3 mb-82">Pievienojies pilotprojektam jau tagad un palīdzi uzlabot daudzdzīvokļu namu pārvaldīšanas nozari!</h3><a class="link-dark fw-bold fs-7 ls-45" href="project.html">Lasīt vairāk par Pilotprojektu<svg class="next-arrow ms-40" width="37" height="16"><use xlink:href="assets/images/icon.svg#icon_next"></use></svg></a>
+                            <h3 class="display-3 mb-82">Pievienojies pilotprojektam jau tagad un palīdzi uzlabot daudzdzīvokļu namu pārvaldīšanas nozari!</h3><a class="link-dark fw-bold fs-7 ls-45 d-flex align-items-center mw-100" href="project.html">Lasīt vairāk par Pilotprojektu<svg class="next-arrow ms-40" width="37" height="16"><use xlink:href="assets/images/icon.svg#icon_next"></use></svg></a>
                         </div>
                     </div>
                 </div>
             </div>
         </SECTION>
-        <div class="modal fade" id="modal-feature" tabindex="-1" aria-labelledby="modalFeatureLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-feature" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
                 <div class="modal-content overflow-visible"><button class="btn-close position-absolute end-100 top-0 p-1 me-35" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-header ps-74 pe-200 pt-80 pb-30">
                         <h4 class="display-3">Leģitīmo kopīgo lēmumu pieņemšanai tiešsaistē</h4>
-                        <div class="featrue-icon ps-55 pe-46 py-45 decorative-frame frame-bottom frame-feature position-absolute top-0 end-0"><img src="assets/images/feature-1.svg" /></div>
+                        <div class="featrue-icon ps-55 pe-46 py-45 decorative-frame frame-bottom frame-feature position-absolute top-0 end-0"><img src="assets/images/feature-1.svg" alt="@@" /></div>
                     </div>
                     <div class="modal-body px-74 py-30">
                         <p>Balss vākšana “par” vai “pret” ar mobilo aplikāciju izmantojot drošu elektronisko parakstu</p>
@@ -126,11 +126,11 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modal-youtube" tabindex="-1" aria-labelledby="modalFeatureLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-youtube" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content bg-dark rounded-0">
                     <div class="modal-body p-0">
-                        <div class="ratio ratio-16x9"><iframe class="player" src="" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+                        <div class="ratio ratio-16x9"><iframe class="player" src="#" allowfullscreen="allowfullscreen"></iframe></div>
                     </div>
                 </div>
             </div>
@@ -148,8 +148,8 @@
                         <li class="nav-item ms-25"><a class="btn btn-gradient-border rounded-pill px-36" href="#">Ienākt</a></li>
                     </ul>
                     <UL class="socials d-flex flex-row list-unstyled align-items-center mb-0 ps-23">
-                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/fb.svg" width="32" height="32" /></a></LI>
-                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/tw.svg" width="32" height="32" /></a></LI>
+                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/fb.svg" width="32" height="32" alt="@@" /></a></LI>
+                        <LI class="socials-item d-block ms-2"><a class="socials-link d-block" href="#"><img src="assets/images/tw.svg" width="32" height="32" alt="@@" /></a></LI>
                     </UL>
                 </div>
             </nav>
