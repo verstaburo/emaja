@@ -39,9 +39,13 @@
   a {
     display: inline-block;
     border: none;
+    line-height: inherit;
+    font-size: inherit;
+    vertical-align: baseline;
     border-bottom: 2px solid $dark;
     border-image-slice: 2;
     border-image-repeat: stretch stretch;
+    padding-top: 2px;
     border-image-width: 0 0 2px 0;
     border-image-source: linear-gradient(-90deg, #fcbe26 7.08%, #b4ed3a 38.05%, #28ec8d 65.64%, #09e1ff 100%);
   }
