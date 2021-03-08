@@ -1,11 +1,11 @@
 mixin features()
   .features.row.row-cols-3.gx-0.gy-104.pt-2&attributes(attributes)
     each item in getData('features.json')
-      a.features-item.col.pe-40.d-flex.flex-column.lh-13(href="#modal-feature" data-bs-toggle="modal")
+      a.features-item.col.pe-40.d-flex.flex-column.lh-13.js-sr.js-sr_bottom(href="#modal-feature" data-bs-toggle="modal")
         .feature-icon.mb-3
           img(src=item.src alt="@@")
         span!=item.describe
-    div.features-item.col.d-flex.flex-column.justify-content-center
+    div.features-item.col.d-flex.flex-column.justify-content-center.js-sr.js-sr_bottom
       a.link-dark.fw-bold.fs-7.ls-45.pb-25.d-flex.align-items-center.mw-100(href="project.html") Vairāk par Emāja
         +icon('next').next-arrow.ms-35(width="37" height="16")
     block

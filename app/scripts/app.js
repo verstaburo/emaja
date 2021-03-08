@@ -16,9 +16,9 @@ import 'bootstrap/js/dist/modal';
 // import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
-// import {
-//   scrollAnimation,
-// } from '../blocks/js-functions/scroll-animation';
+import {
+  scrollAnimation,
+} from '../blocks/js-functions/scroll-animation';
 import 'parsleyjs';
 import modalYoutube from '../components/modal-video/modal-youtube';
 import autosize from 'autosize';
@@ -26,7 +26,7 @@ import autosize from 'autosize';
 (() => {
   svg4everybody();
   objectFitImages();
-  // scrollAnimation();
+  scrollAnimation();
   modalYoutube();
 
   const lang = document.querySelector('html').getAttribute('lang').toLowerCase();
