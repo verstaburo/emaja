@@ -18,6 +18,10 @@
   align-items: center;
   z-index: 2;
 
+  span {
+    transition: opacity .15s ease-in-out;
+  }
+
   &::before {
     display: block;
     content: '';
@@ -29,5 +33,16 @@
     height: 6.875rem;
     border-radius: 50%;
     flex: none;
+    transition: transform .15s ease-in-out;
+  }
+
+  &:hover {
+    span {
+      opacity: .7;
+    }
+
+    &::before {
+      transform: scale(.95);
+    }
   }
 }

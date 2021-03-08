@@ -68,6 +68,10 @@ body {
   letter-spacing: -.035em;
 }
 
+a {
+  transition: opacity .15s ease-in-out, color .15s ease-in-out;
+}
+
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.045em;
 }
@@ -104,10 +108,22 @@ body {
   width: 2.3125rem;
   height: 1rem;
   fill: url('#gradient-arrow');
+  transform-origin: 50% 50%;
+  transition: transform .15s ease-in-out;
+
+  a:hover &, button:hover & {
+    transform: translate3d(5px, 0, 0);
+  }
 }
 
 .back-icon {
   width: 1.625rem;
   height: 1rem;
   fill: currentColor;
+  transform-origin: 50% 50%;
+  transition: transform .15s ease-in-out;
+
+  a:hover &, button:hover & {
+    transform: translate3d(-5px, 0, 0);
+  }
 }

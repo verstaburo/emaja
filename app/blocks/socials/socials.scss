@@ -5,6 +5,11 @@
 .socials-link {
   width: 2rem;
   height: 2rem;
+  transition: opacity .15s ease-in-out;
+
+  &:hover {
+    opacity: .7;
+  }
 
   svg, img {
     width: 100%;

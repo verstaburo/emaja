@@ -176,7 +176,7 @@ $paragraph-margin-bottom: 2.375rem;
 $link-color: $dark;
 $link-decoration: none;
 $link-shade-percentage:                   20%;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-color:                        rgba($link-color, .7);
 
 $font-family-sans-serif: 'MuktaVaani', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-aditional: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -273,7 +273,6 @@ $btn-font-family:             $input-btn-font-family;
 $btn-font-size:               $input-btn-font-size;
 $btn-line-height:             $input-btn-line-height;
 $btn-white-space: nowrap; // Set to `nowrap` to prevent text wrapping
-
 $btn-padding-y-sm:            $input-btn-padding-y-sm;
 $btn-padding-x-sm:            $input-btn-padding-x-sm;
 $btn-font-size-sm:            $input-btn-font-size-sm;
@@ -292,7 +291,7 @@ $btn-disabled-opacity: .65;
 $btn-active-box-shadow: none;
 
 $btn-link-color: $link-color;
-$btn-link-hover-color: $link-hover-color;
+$btn-link-hover-color: rgba($link-color, .7);
 $btn-link-disabled-color: $gray-600;
 
 // Allows for customizing button radius independently from global border radius
@@ -300,7 +299,7 @@ $btn-border-radius:           $border-radius-pill;
 $btn-border-radius-sm:        $border-radius-pill;
 $btn-border-radius-lg:        $border-radius-pill;
 
-$btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+$btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, opacity .15s ease-in-out;
 
 // Forms
 $input-padding-y: 1.0625rem;
@@ -341,7 +340,7 @@ $input-height:                          add($input-line-height * 1em, add($input
 $input-height-sm:                       add($input-line-height * 1em, add($input-padding-y-sm * 2, $input-height-border, false)) !default;
 $input-height-lg:                       add($input-line-height * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default;
 
-$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
 // Form validation
 
