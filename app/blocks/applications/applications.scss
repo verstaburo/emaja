@@ -5,6 +5,11 @@
 .applications-link {
   display: inline-block;
   height: 4.376rem;
+  transition: opacity .15s ease-in-out;
+
+  &:hover {
+    opacity: .7;
+  }
 
   img {
     display: block;
