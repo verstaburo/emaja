@@ -1,8 +1,8 @@
 mixin modal-video()
-  +modal()#modal-youtube(tabindex="-1" aria-labelledby="modalFeatureLabel" aria-hidden="true")
+  +modal()#modal-youtube(tabindex="-1" aria-hidden="true")
     .modal-dialog.modal-xl.modal-dialog-centered
       .modal-content.bg-dark.rounded-0
         .modal-body.p-0
           .ratio.ratio-16x9
-            iframe.player(src="" frameborder="0" allowfullscreen)
+            iframe.player(src="#" allowfullscreen)
     block

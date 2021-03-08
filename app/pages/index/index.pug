@@ -20,7 +20,7 @@ block content
           picture
             source(srcset="assets/images/lead-image.webp, assets/images/lead-image@2x.webp 2x" type="image/webp")
             source(srcset="assets/images/lead-image.jpg, assets/images/lead-image@2x.jpg 2x" type="image/jpeg")
-            img.img-fluid(src="assets/images/lead-image.jpg" alt="@@")
+            img.img-fluid.w-100(src="assets/images/lead-image.jpg" alt="@@")
       +note Uz doto brīdi sistēma atrodas izstādes stadijā un pilotprojektā ir pieejama tikai elektroniskās aptaujas funkcionalitāte mobilā lietotnē
   +page-section.mb-218
     .container-fluid.px-xl-100
@@ -37,9 +37,9 @@ block content
             picture
               source(srcset="assets/images/video-preview.webp, assets/images/video-preview@2x.webp 2x" type="image/webp")
               source(srcset="assets/images/video-preview.jpg, assets/images/video-preview@2x.jpg 2x" type="image/jpeg")
-              img.img-fluid.mw-40.rounded-pill(src="assets/images/video-preview.jpg" alt="@@")
+              img.img-fluid.mw-40.rounded-pill(src="assets/images/video-preview.jpg" alt="@@" loading="lazy")
         .col-sm-5.pt-88
           +decorative-frame.frame-end.frame-w-120.px-52.pt-123.pb-96
             h3.display-3.mb-82 Pievienojies pilotprojektam jau tagad un palīdzi uzlabot daudzdzīvokļu namu pārvaldīšanas nozari!
-            a.link-dark.fw-bold.fs-7.ls-45(href="project.html") Lasīt vairāk par Pilotprojektu
+            a.link-dark.fw-bold.fs-7.ls-45.d-flex.align-items-center.mw-100(href="project.html") Lasīt vairāk par Pilotprojektu
               +icon('next').next-arrow.ms-40(width="37" height="16")

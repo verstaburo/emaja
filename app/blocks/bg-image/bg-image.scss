@@ -1,3 +1,7 @@
 .bg-image {
   $b: &;
+
+  img {
+    width: 100%;
+  }
 }

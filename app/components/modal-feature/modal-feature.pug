@@ -1,12 +1,12 @@
 mixin modal-feature()
-  +modal()#modal-feature(tabindex="-1" aria-labelledby="modalFeatureLabel" aria-hidden="true")
+  +modal()#modal-feature(tabindex="-1" aria-hidden="true")
     .modal-dialog.modal-dialog-scrollable.modal-dialog-centered.modal-lg
       .modal-content.overflow-visible
         button.btn-close.position-absolute.end-100.top-0.p-1.me-35(type="button" data-bs-dismiss="modal" aria-label="Close")
         .modal-header.ps-74.pe-200.pt-80.pb-30
           h4.display-3 Leģitīmo kopīgo lēmumu pieņemšanai tiešsaistē
           .featrue-icon.ps-55.pe-46.py-45.decorative-frame.frame-bottom.frame-feature.position-absolute.top-0.end-0
-            img(src="assets/images/feature-1.svg")
+            img(src="assets/images/feature-1.svg" alt="@@")
         .modal-body.px-74.py-30
           p Balss vākšana “par” vai “pret” ar mobilo aplikāciju izmantojot drošu elektronisko parakstu
           p Smart-ID QES (pieejams) <br> eParaksts (izstrādē)

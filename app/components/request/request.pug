@@ -1,24 +1,24 @@
 mixin request()
-  +form().needs-validation.request.decorative-frame.frame-w-134(method="POST" action="/" novalidate)
+  +form().needs-validation.request.decorative-frame.frame-w-134(method="POST" action="/")
     .row.gy-33.px-68.pt-72.pb-0
       .col-sm-6
         input.form-control(type="text" name="name" placeholder="Nosaukums" required)
-        .invalid-feedback No empty field
+        .invalid-feedback
       .col-sm-6
-        input.form-control(type="text" name="contacts" placeholder="Kontaktinformācija (telefons, epasts)" required)
-        .invalid-feedback No empty field
+        input.form-control(type="text" name="contacts" placeholder="Kontaktinformācija (telefons, epasts)" required data-parsley-mailphone)
+        .invalid-feedback
       .col-12
         input.form-control(type="text" name="address" placeholder="Mājas adrese (Pilsēta, iela, mājas numurs-korpuss)" required)
-        .invalid-feedback No empty field
+        .invalid-feedback
       .col-12
         input.form-control(type="text" name="position" placeholder="Jūsu loma (Dz. īpašnieks/Mājas vecākais/Pārvaldnieks" required)
-        .invalid-feedback No empty field
+        .invalid-feedback
       .col-12
         input.form-control(type="text" name="date" placeholder="Plānotas aptaujas datums (ja zinams)" required)
-        .invalid-feedback No empty field
+        .invalid-feedback
       .col-12
         textarea.form-control(name="topic" placeholder="Plāntotājs aptaujas tēmats un cita svarīgā informācija" rows="3" required)
-        .invalid-feedback No empty field
+        .invalid-feedback
       .col-12.d-flex.justify-content-center.mt-26
         +button('button').btn-lg.text-nowrap.text-center.bg-gradient.text-white.fw-bolder(type="submit") Iesniegt
     block
