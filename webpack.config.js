@@ -25,5 +25,8 @@ module.exports = (watch = false) => ({
         loader: 'babel-loader',
       },
     ],
+  },
+  optimization: {
+    minimize: false,
   }
 });

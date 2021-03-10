@@ -32,9 +32,9 @@ exports.build = () => (
     }),
     postcssImport(),
     discardComents(),
-    cssnano({
-      preset: 'default',
-    }),
+    // cssnano({
+    //   preset: 'default',
+    // }),
   ]))
   .pipe(gulpIf(isDebug, sourcemaps.write()))
   .pipe(rename({
